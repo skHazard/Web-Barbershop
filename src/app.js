@@ -8,6 +8,7 @@ export default React.createClass({
     render() {
         return (
             <div>
+                <div className="nav-menu">
                 <ul role="nav">
                     <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
                     <li><NavLink to="/for-men">Men</NavLink></li>
@@ -17,6 +18,7 @@ export default React.createClass({
                     <li><NavLink to="/works">Our Works</NavLink></li>
                     <li><NavLink to="/contacts">Contacts</NavLink></li>
                     </ul>
+                </div>
                 {this.props.children || <Home/>}
             </div>
         )
