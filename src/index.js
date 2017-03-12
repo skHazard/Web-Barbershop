@@ -1,14 +1,14 @@
-import React from 'react'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import { render } from 'react-dom'
-import App from './app'
-import Home from './components/Home'
-import Men from './components/Men'
-import Women from './components/Women'
-import Services from './components/Services'
-import Masters from './components/Masters'
-import Works from './components/Works'
-import Contacts from './components/Contacts'
+import React from 'react';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { render } from 'react-dom';
+import App from './app';
+import Home from './components/Home';
+import Men from './components/Men';
+import Women from './components/Women';
+import Services from './components/Services';
+import Masters from './components/Masters';
+import Works from './components/Works';
+import Contacts from './components/Contacts';
 
 render((
     <Router history={browserHistory}>

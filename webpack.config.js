@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: __dirname,
         filename: 'bundle.js',
-        publicPath: '/src/'
+        publicPath: '/'
     },
 
     watch: NODE_ENV == 'development',
@@ -29,7 +29,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('style-loader!css-loader!autoprefixer-loader?browsers = last 2 versions!sass-loader')
+                loader: ExtractTextPlugin.extract('style-loader','css-loader','autoprefixer-loader?browsers = last 2 versions','sass-loader')
             }
         ]
     },
