@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto|Open+Sans:400italic,600italic,400,600);
+@import '../sass/navbar.scss';
+@import '../sass/home.scss';
 
 html, body {
   padding: 0;
@@ -15,46 +16,6 @@ a {
 
 #app {
   height: 100vh;
+  overflow-y: hidden;
 }
-
-.nav-menu {
-  display: flex;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-  background-color: red;
-  font-weight: bold;
-}
-
-.nav-menu ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu ul li {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 50px;
-}
-
-.nav-menu ul li a {
-  flex: 1;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.nav-menu ul li:hover {
-  background-color: #a2cd5a;
-}
-
-
 

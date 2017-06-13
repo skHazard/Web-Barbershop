@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto|Orbitron|Open+Sans:400italic,600italic,400,600);
+
+.nav-menu {
+  display: flex;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  background: rgba(0,0,0,0.8);
+  font-weight: bold;
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    .nav-logo {
+      width: 30%;
+      color: magenta;
+    }
+
+    li {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 50px;
+
+      a {
+        flex: 1;
+        color: #fff;
+        font-family: Orbitron;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #a2cd5a;
+        }
+      }
+    }
+  }
+}

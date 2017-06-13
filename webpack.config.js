@@ -29,11 +29,16 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('style-loader','css-loader','autoprefixer-loader?browsers = last 2 versions','sass-loader')
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'resolve-url-loader', 'autoprefixer-loader?browsers = last 2 versions', 'sass-loader?sourceMap')
+            },
+            // File loader for supporting images, for example, in CSS files.
+            {
+                test: /\.(jpg|png|gif)$/,
+                loader: 'file-loader'
             }
         ]
     },
-    plugins : [
+    plugins: [
         new ExtractTextPlugin('./style/main.css')
     ]
 };

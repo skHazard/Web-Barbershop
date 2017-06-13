@@ -3,13 +3,15 @@ import NavLink from '../src/components/NavLink';
 import { IndexLink } from 'react-router';
 import Home from '../src/components/Home';
 
+import '../src/sass/main.scss';
+
 export default React.createClass({
     render() {
         return (
             <div>
                 <div className="nav-menu">
                     <ul role="nav">
-                        <li><IndexLink to="/" className="nav-logo" activeClassName="active">LOGO IMG HOME</IndexLink></li>
+                        <li><IndexLink to="/" className="nav-logo" activeClassName="active">GOODMEN SMILE</IndexLink></li>
                         <li><NavLink to="/for-men">Men</NavLink></li>
                         <li><NavLink to="/for-women">Women</NavLink></li>
                         <li><NavLink to="/services">Services</NavLink></li>

@@ -4,5 +4,5 @@ bundle.js
 npm-debug.log
 
 # IntelliJ
-*.iml
-/.idea
+      *.iml
+      /.idea
